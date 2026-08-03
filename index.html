@@ -14,57 +14,55 @@
   }
 
   /* Navigation Bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffff;
-  padding: 15px 30px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
 
-.logo {
-  height: 85px;
-  width: auto;
-}
+  .logo {
+    height: 85px;
+    width: auto;
+  }
 
-.nav-left h1 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-}
+  .nav-left h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
 
-.nav-links a {
-  text-decoration: none;
-  color: #444;
-  font-size: 16px;
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
+  .nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
 
-.nav-links a:hover {
-  color: #4a90e2;
-}
-
-
+  .nav-links a:hover {
+    color: #4a90e2;
+  }
 
   /* Hero Section */
   .hero {
@@ -85,6 +83,26 @@ nav {
     margin: 0 auto;
   }
 
+  /* Mission + Vision Section */
+  .info-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+
+  .card h2 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+  }
+
   /* Footer */
   footer {
     text-align: center;
@@ -101,7 +119,7 @@ nav {
 <nav>
   <div class="nav-left">
     <img src="logo.png" alt="BetterWare LLC Logo" class="logo">
-   
+    <h1>BetterWare LLC</h1>
   </div>
 
   <ul class="nav-links">
@@ -112,13 +130,32 @@ nav {
   </ul>
 </nav>
 
-
-
 <div class="hero">
   <h2>Welcome to BetterWare LLC</h2>
   <p>Innovative solutions for health, technology, and everyday life.  
      Proud creators of the Glucose Tracker app.</p>
 </div>
+
+<section class="info-section">
+
+  <div class="card">
+    <h2>Mission</h2>
+    <p>
+      BetterWare LLC exists to design simple, reliable software that helps people make better decisions every day.
+      I focus on practical, user‑centered tools—starting with health and wellness—that turn complex data into clear,
+      actionable insight.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Vision</h2>
+    <p>
+      My vision is to build a suite of intelligent, privacy‑respecting apps that quietly improve people’s lives in the
+      background—so technology feels like a trusted partner, not a burden.
+    </p>
+  </div>
+
+</section>
 
 <footer>
   © 2026 BetterWare LLC — All Rights Reserved
