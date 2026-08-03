@@ -14,38 +14,39 @@
   }
 
   /* Navigation Bar */
-  <nav>
-  <h1>BetterWare LLC</h1>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="support.html">Support</a></li>
-  </ul>
-</nav>
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+  nav h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #444;
+  }
 
-.nav-links a {
-  text-decoration: none;
-  color: #444;
-  font-weight: bold;
-}
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
 
-.nav-links a:hover {
-  color: #4a90e2;
-}
+  .nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+  }
 
-  
+  .nav-links a:hover {
+    color: #4a90e2;
+  }
 
   /* Hero Section */
   .hero {
@@ -81,6 +82,12 @@ nav {
 
 <nav>
   <h1>BetterWare LLC</h1>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="support.html">Support</a></li>
+  </ul>
 </nav>
 
 <div class="hero">
